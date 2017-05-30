@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Alert } from './components/alert.js';
 import { Button } from './components/button.js';
+import { Nav } from './components/nav.js';
 
 class App extends Component {
   render() {
@@ -41,6 +42,17 @@ class App extends Component {
         <Button buttonType='link'>
           Link
         </Button>
+        <nav className="nav">
+          <Nav navType='active'>
+            Active
+          </Nav>
+          <Nav>
+            Link
+          </Nav>
+          <Nav navType='disabled'>
+            Disabled
+          </Nav>
+        </nav>
       </div>
     );
   }
