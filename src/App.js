@@ -4,6 +4,7 @@ import './App.css';
 import { Alert } from './components/alert.js';
 import { Button } from './components/button.js';
 import { Nav } from './components/nav.js';
+import { ButtonGroup } from './components/ButtonGroup.js';
 
 class App extends Component {
   render() {
@@ -64,29 +65,23 @@ class App extends Component {
         </div>
         <div className='container mb-4'>
           <h1>Button Group</h1>
-          <div className='btn-group'
-            <Button buttonType='primary'>
-              Primary
+          <ButtonGroup>
+            <Button buttonType='secondary'>
+              One
             </Button>
             <Button buttonType='secondary'>
-              Secondary
+              Two
             </Button>
-            <Button buttonType='success'>
-              Success
+            <Button buttonType='secondary'>
+              Three
             </Button>
-            <Button buttonType='warning'>
-              Warning
+            <Button buttonType='secondary'>
+              Four
             </Button>
-            <Button buttonType='info'>
-              Info
+            <Button buttonType='secondary'>
+              Five
             </Button>
-            <Button buttonType='danger'>
-              Danger
-            </Button>
-            <Button buttonType='link'>
-              Link
-            </Button>
-          </div>
+          </ButtonGroup>
         </div>
       </div>
     );
